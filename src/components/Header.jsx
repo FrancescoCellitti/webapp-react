@@ -2,10 +2,10 @@ export default function Header() {
     return (
         <>
             <nav
-                className="navbar navbar-expand-sm navbar-light bg-light"
+                className="navbar navbar-expand-sm navbar-dark bg-dark" data-bs-theme="dark"
             >
                 <div className="container">
-                    <a className="navbar-brand" href="#">Navbar</a>
+                    <a className="navbar-brand" href="#"><span className="text-danger">TELEFLIX</span></a>
                     <button
                         className="navbar-toggler d-lg-none"
                         type="button"
@@ -20,23 +20,24 @@ export default function Header() {
                     <div className="collapse navbar-collapse" id="collapsibleNavId">
                         <ul className="navbar-nav me-auto mt-2 mt-lg-0">
                             <li className="nav-item">
-                                <a className="nav-link active" href="#" aria-current="page">
+                                <a className="nav-link" href="#" aria-current="page">
                                     Home
                                     <span className="visually-hidden">(current)</span>
                                 </a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Link</a>
+                                <a className="nav-link" href="#">Film</a>
                             </li>
                         </ul>
                         <form className="d-flex my-2 my-lg-0">
                             <input
                                 className="form-control me-sm-2"
-                                type="text"
+                                type="search"
                                 placeholder="Search"
+                                aria-label="Search"
                             />
                             <button
-                                className="btn btn-outline-success my-2 my-sm-0"
+                                className="btn btn-outline-secondary my-2 my-sm-0"
                                 type="submit"
                             >
                                 Search
