@@ -30,15 +30,14 @@ export default function SingleFilms() {
 
     return (
         <div className="container">
-            <div className="card border-0 col-6 mx-auto my-5">
+            <div className="card bg-dark border-0 col-6 mx-auto my-5">
                 <img src={film.image} alt={film.title} className="card-img-top" style={{
                     height: '300px',
                     objectFit: 'contain',
-                    backgroundColor: '#fff'
                 }} />
-                <div className="card-body text-center">
-                    <h3 className="card-title">{film.title}</h3>
-                    <h6 className="card-subtitle mb-2 text-muted">{film.director}</h6>
+                <div className="card-body text-center text-secondary">
+                    <h3 className="card-title text-danger">{film.title}</h3>
+                    <h6 className="card-subtitle mb-2 ">{film.director}</h6>
                     <p className="card-text">{film.abstract}</p>
                 </div>
             </div>
