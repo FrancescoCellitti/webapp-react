@@ -15,7 +15,7 @@ export default function Home() {
 
     return (
         <>
-            <div className="container bg-light mt-2 rounded-5">
+            <div className="container mt-2 rounded-5">
                 <h1 className="text-danger px-4">Films</h1>
                 <div className="row">
                     {films.map((film, index) => (

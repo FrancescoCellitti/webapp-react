@@ -1,6 +1,7 @@
 export default function Footer() {
     return (
         <footer className="bg-dark text-light py-4 mt-auto">
+            <hr className="my-4" />
             <div className="container">
                 <div className="row">
                     <div className="col-md-6">

@@ -5,7 +5,10 @@ export default function DefaultLayout() {
     return (
         <>
             <Header></Header>
-            <Outlet></Outlet>
+            <div className="bg-dark my-0">
+                <Outlet></Outlet>
+            </div>
+
             <Footer></Footer>
         </>
 
